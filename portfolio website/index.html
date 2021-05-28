@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>John St.Hilaire</title>
+</head>
+<body>
+
+    <section id="top">
+
+        
+        
+        
+        <div class="spacing" class="fadein1">
+            <img class="rotate linear infinite" id="logo" src="img/logo_icon.svg" alt="personal logo icon">
+
+
+            <h1 class="fadein1">
+                Hi, I’m John
+            </h1>
+
+            <h2 class="fadein2">
+                I’m a UX / UI Designer with focused on making the digital world <br> <b id="keyword1">useful</b>, <b id="keyword2">accessable</b>, and <b id="keyword3">beautiful</b>.
+            </h2>
+
+            <ul id="menu" class="fadein3">
+                <li><a href="https://www.linkedin.com/in/john-sthilaire-393385210/"><img class="icon" src="img/icons/linkedin.svg" alt="linkedin icon"></a></li>
+                <li><a href="https://github.com/NeoTions"><img class="icon" src="img/icons/github.svg" alt="github icon"></a></li>
+                <li><a href="https://www.instagram.com/neotions/?igshid=16c2x85ka89qv"><img class="icon" src="img/icons/instagram.svg" alt="instagram icon"></a></li>
+            </ul> 
+        </div>
+
+
+
+
+    </section>
+
+    <section id="navsection">
+        <div class="spacing">
+            
+            
+            <ul id="navmenu">
+                <li><a class="navtext" href="">View Work</a></li>
+                <li><a class="navtext" href="">Resume/CV</a></li>
+                <li><a class="navtext" href="">Process</a></li>
+                <li><a class="navtext" href="">Contact</a></li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <section id="contentsection" class="spacing">
+
+        <div id="tera">
+            <div>
+                <img id="teraphoto" src="img/tera/tera-cover-1.png" alt="photo for TERA project">
+            </div>
+
+            <div id="teratext">
+                <p>TERA is the exploration and ideation of a tech company that makes smart agriculture products for its users in order to provide cheap and easy access to fresh produce as well as fostering conversations on global sustainability.</p>        
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="cursor"></div>
+
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
+
+    <link rel="script" href="scripts.js">
+
+</body>
+
+
+</html>
